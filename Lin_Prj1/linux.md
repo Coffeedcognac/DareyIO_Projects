@@ -9,3 +9,11 @@
 
 + I also created copy on the file and renamed them, the zipped my hy home directory
 ![file manipulation 2](scrn_shots/file_manipulation2.JPG)
+
++ Located the newly zipped file
++ Checked the zipped file size
++ checked my current working directory disk space usage
++ created a new text file do test the `tail` and `head` commands
+  ![file manipulation 3](scrn_shots/file_manipulation3.JPG)
++ `mv` the text file to a new directory
+  ![move](scrn_shots/mv.JPG)
