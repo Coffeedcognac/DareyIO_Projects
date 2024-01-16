@@ -6,3 +6,6 @@
 
 + Started with creating a directory called ubuntu and also added yaml and bash files
   ![create files in a newly created directory](scrn_shots/file_manipulation1.JPG)
+
++ I also created copy on the file and renamed them, the zipped my hy home directory
+![file manipulation 2](scrn_shots/file_manipulation2.JPG)
