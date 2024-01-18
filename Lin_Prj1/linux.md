@@ -17,3 +17,5 @@
   ![file manipulation 3](scrn_shots/file_manipulation3.JPG)
 + `mv` the text file to a new directory
   ![move](scrn_shots/mv.JPG)
++ added modes and permisiio9ns on the text file
+  ![file permissions](scrn_shots/file_permissions.JPG)
