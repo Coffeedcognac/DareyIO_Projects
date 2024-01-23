@@ -1,5 +1,5 @@
 # The Git Project Documentation #
-### Aim: To initialise a repository locally and migratr to remote github location
+### Aim: To initialise a repository locally and migrate to remote github location
 + Create a directory to initialise it 
   
 ![initialise Repo](/git_prjct/git_init.JPG)
