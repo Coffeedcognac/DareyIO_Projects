@@ -13,5 +13,5 @@
  #### You must always make sure your current working directory is the directory that has been git initialised
  #### Set up a new repo on github and get the git url
  #### Run ` git remote add origin https://github.com/Coffeedcognac/Test_git.git` to migrate all files from the initialised local repo to the github url
- #### To clone a repo from github ` git clone origin https://github.com/Coffeedcognac/Test_git.git` ###
+ #### To clone a repo from github ` git origin https://github.com/Coffeedcognac/Test_git.git` ###
   ![merging branches 2](/git_prjct/3rd.JPG)
