@@ -28,7 +28,7 @@ Connect to your instance `ssh -i <private-key-name>.pem ubuntu@<Public-IP-addres
 ![install mysql-server](valid_mysql_pass.JPG)
 
 Once we are set with apache and mysqlserver , we will go ahead to install php. for PHP we have 3 packages to set up for this webserver, one package to set up php files `php`, a second packe which manages connection to the DBMS(mysqlserver) `php-mysql`and a package that lets apache parse php files to be read on the webpage `lipapache2-mod-php`.
-add php image here
+![install mysql-server](instl_php.JPG)
 
 
 
