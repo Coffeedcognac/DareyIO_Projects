@@ -24,9 +24,11 @@ Connect to your instance `ssh -i <private-key-name>.pem ubuntu@<Public-IP-addres
 ![testing_http](/PRJCT_1/testing_https.JPG)
 
 #### Next  we install mysql server `sudo apt install mysql-server` then log in using the default usser root `sudo mysql`. Now we want to set a password for user root , everytime we log in to my mysql using this query `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';` then validate the password you set `sudo mysql_secure_installation` To exit mysql use this `exit`
-
-
 ![install mysql-server](inst_mysqlserver.JPG)
+![install mysql-server](valid_mysql_pass.JPG)
+
+Once we are set with apache and mysqlserver , we will go ahead to install php. for PHP we have 3 packages to set up for this webserver, one package to set up php files `php`, a second packe which manages connection to the DBMS(mysqlserver) `php-mysql`and a package that lets apache parse php files to be read on the webpage `lipapache2-mod-php`.
+add php image here
 
 
 
