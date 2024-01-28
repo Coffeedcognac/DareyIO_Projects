@@ -2,7 +2,7 @@
 #### Aim: To deploy a website with its running tools on a dedicated webserver
 ####Tools :  AWS, Apache, MySql sever and PHP , openssh
 ` Note: this task will be deployed using an AWS cloud provisioned EC2 Instance(ubuntu) `
-#### We are going to create a key pair aan use it as a 2 way authentication between our local PC and the ec2 instace we cretate on AWS 
+#### We are going to create a key pair using it as a 2 way authentication between our local PC and the ubuntu ec2 instace we cretate on AWS 
 `Note if you will be using  openssh on powershell always generate a .pem key pair`
 ![Generate Keypair](/PRJCT_1/key_pair.JPG)
 ![Instance created using keypair](/PRJCT_1/EC2.jpg)
@@ -27,7 +27,7 @@ Connect to your instance `ssh -i <private-key-name>.pem ubuntu@<Public-IP-addres
 ![install mysql-server](inst_mysqlserver.JPG)
 ![install mysql-server](valid_mysql_pass.JPG)
 
-Once we are set with apache and mysqlserver , we will go ahead to install php. for PHP we have 3 packages to set up for this webserver, one package to set up php files `php`, a second packe which manages connection to the DBMS(mysqlserver) `php-mysql`and a package that lets apache parse php files to be read on the webpage `lipapache2-mod-php`.
+### Once we are set with apache and mysqlserver , we will go ahead to install php. for PHP we have 3 packages to set up for this webserver, one package to set up php files `php`, a second packe which manages connection to the DBMS(mysqlserver) `php-mysql`and a package that lets apache parse php files to be read on the webpage `lipapache2-mod-php`. run `sudo apt install php libapache2-mod-php php-mysql` after the installation process is finished . check version using this command `php -v`
 ![install mysql-server](instl_php.JPG)
 
 
