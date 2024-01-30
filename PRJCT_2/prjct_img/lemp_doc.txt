@@ -667,7 +667,7 @@ Reload privilege tables now? (Press y|Y for Yes, any other key for No) : d
 All done!
 ubuntu@ip-172-31-23-206:~$ client_loop: send disconnect: Connection reset by peer
 
-CLS-PC@NEW-ANPN1N9QSNR MINGW64 ~
+
 $ ssh -i pbl2.pem ubuntu@ec2-34-211-170-9.us-west-2.compute.amazonaws.com
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-1017-aws x86_64)
 
@@ -846,7 +846,7 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 ubuntu@ip-172-31-23-206:~$ client_loop: send disconnect: Connection reset by peer
 
-CLS-PC@NEW-ANPN1N9QSNR MINGW64 ~
+
 $ ssh -i pbl2.pem ubuntu@ec2-34-211-170-9.us-west-2.compute.amazonaws.com
 Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-1017-aws x86_64)
 
