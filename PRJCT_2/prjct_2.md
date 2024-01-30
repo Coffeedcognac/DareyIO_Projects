@@ -1,8 +1,10 @@
 ## Webstack Implementation (LEMP)
+Note : The whole command line process can be found in this path 
+ https://github.com/Coffeedcognac/DareyIO_Projects/blob/main/PRJCT_2/prjct_img/lemp_doc.txt 
 #### Linux, EngineX(nginx), Mysqlserver,PHP.
 `We will be using Gitbash as the SSH client and AWS provided ubuntu EC2 instance for this task`
 ##### Provision your server and ssh into it using Gitbash
-#### Note make sure to be in the directory where the .pem file is located or be sure to provide the entire path to were the .pem file is saved, see below.
+#### Make sure to be in the directory where the .pem file is located or be sure to provide the entire path to were the .pem file is saved, see below.
 ![EC2](prjct_img/lemp_EC2.jpg)
 ` ssh -i path/to/your/abc.pem ubuntu@your.public.ip.address`
 #### I also went to my working directory . Luckily Gitbash sort of functions like our usual linux terminal so we can `pwd`(point your working directory) on it ; this is to make sure that we are on the same path where our .pem keypair is stored and run
