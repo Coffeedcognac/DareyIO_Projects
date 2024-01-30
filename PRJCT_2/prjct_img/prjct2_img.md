@@ -349,7 +349,8 @@ ubuntu@ip-172-31-23-206:~$ `curl -s http://169.254.169.254/latest/meta-data/publ
  </body>
 </html>
 ## Activate the http security protocol for the EC2 instance with port 80 Query with http://your.ip:80
-![Active]()
+
+![Acivate port 80](prjct_img/nginx_http.JPG)
 
 ubuntu@ip-172-31-23-206:~$ sudo apt install mysql-server
 Reading package lists... Done
