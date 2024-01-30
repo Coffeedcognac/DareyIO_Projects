@@ -994,7 +994,3 @@ mysql> exit
 Bye
 ubuntu@ip-172-31-23-206:~$ nano /var/www/projectLEMP/todo_list.php
 ubuntu@ip-172-31-23-206:~$ nano /var/www/projectLEMP/todo_list.php
-ubuntu@ip-172-31-23-206:~$ client_loop: send disconnect: Connection reset by peer
-
-CLS-PC@NEW-ANPN1N9QSNR MINGW64 ~
-$
