@@ -1,10 +1,6 @@
 
-CLS-PC@NEW-ANPN1N9QSNR MINGW64 ~
-$ pwd
-/c/Users/CLS-PC
 
-CLS-PC@NEW-ANPN1N9QSNR MINGW64 ~
-$ ssh -i pbl2.pem ubuntu@ec2-34-211-170-9.us-west-2.compute.amazonaws.com
+*********SNR MINGW64 ~$ ssh -i pbl2.pem ubuntu@ec2-34-211-170-9.us-west-2.compute.amazonaws.com`
 The authenticity of host 'ec2-34-211-170-9.us-west-2.compute.amazonaws.com (34.211.170.9)' can't be established.
 ED25519 key fingerprint is SHA256:rtdheIojQkAzd+9ShGPvHhKQGHuRXSxwUqtN20TjHfQ.
 This key is not known by any other names.
