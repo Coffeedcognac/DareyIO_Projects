@@ -27,7 +27,8 @@ Note : this can be don with backticks`` or $()
 
 
 
-## Writing our first Shell script
+## Writing our first Shell script (commented each line)
+
 ![test first script](img/intro.JPG)
 
 ## Directory Manipulation and Navigation
