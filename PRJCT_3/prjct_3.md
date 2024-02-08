@@ -32,9 +32,13 @@ Note : this can be don with backticks`` or $()
 ![test first script](img/intro_commt.JPG)
 ![test first script](img/intro.JPG)
 
+This script interacts with the user by prompting them to enter their name, reading the input, and then displaying a greeting message using the entered name.
+
 ## Directory Manipulation and Navigation
 ![test first script](img/twocommt.JPG)
 ![test first script](img/two.JPG)
+
+This script creates three files, displays their initial order, sorts them alphabetically, displays the sorted order, removes the original files, renames the sorted file, and then displays the final sorted file
 
 ## File Operations and sorting
 ![test first script](img/3r33comt.JPG)
