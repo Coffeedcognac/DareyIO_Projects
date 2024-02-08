@@ -44,10 +44,16 @@ This script creates three files, displays their initial order, sorts them alphab
 ![test first script](img/3r33comt.JPG)
 ![test first script](img/3r33.JPG)
 
+These comments explain each line of the script and provide context for the actions being performed.
+
 ## Working with Numbers and Calculations
 ![test first script](img/4ourcommt.JPG)
 ![test first script](img/4our.JPG)
 
+This script demonstrates basic arithmetic operations, including addition, subtraction, multiplication, division, and modulo. Additionally, it performs more complex calculations such as raising a number to the power of 2 and finding the square root using the bc calculator. Finally, the script displays the results of all calculations.
+
 ## File Backup and Timestamping
 ![test first script](img/five2commt.JPG)
 ![test first script](img/five2.JPG)
+
+This Script runs kepps a backup of a specified path and saves it with a name similar to the timestamp as at the time the backup was taken.
