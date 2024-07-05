@@ -1,0 +1,163 @@
+See below all steps on the Mysqlclient
+
+CLS-PC@NEW-ANPN1N9QSNR MINGW64 /
+$ ssh -i C:/Users/CLS-PC/.ssh/pbl_accsspem.pem ubuntu@ec2-54-191-76-217.us-west-2.compute.amazonaws.com
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.8.0-1008-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Jul  5 12:26:53 UTC 2024
+
+  System load:  0.0               Processes:             105
+  Usage of /:   31.0% of 6.71GB   Users logged in:       0
+  Memory usage: 30%               IPv4 address for enX0: 172.31.17.199
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+40 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+*** System restart required ***
+Pending kernel upgrade!
+Running kernel version:
+  6.8.0-1008-aws
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-1010-aws.
+Last login: Tue Jul  2 14:10:43 2024 from 102.211.164.2
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-17-199:~$ sudo apt update -y
+Hit:1 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [220 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:6 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [59.7 kB]
+Get:7 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [3596 B]
+Get:8 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [116 kB]
+Get:9 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [42.8 kB]
+Get:10 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [4752 B]
+Get:11 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [416 B]
+Get:12 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [532 B]
+Get:13 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [988 B]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [193 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [2432 B]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [65.1 kB]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [2236 B]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [420 B]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [344 B]
+Fetched 1090 kB in 2s (723 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+40 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-17-199:~$ sudo apt install mysql-client -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  mysql-client-8.0 mysql-client-core-8.0 mysql-common
+The following NEW packages will be installed:
+  mysql-client mysql-client-8.0 mysql-client-core-8.0 mysql-common
+0 upgraded, 4 newly installed, 0 to remove and 40 not upgraded.
+Need to get 2832 kB of archives.
+After this operation, 61.8 MB of additional disk space will be used.
+Get:1 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-core-8.0 amd64 8.0.37-0ubuntu0.24.04.1 [2794 kB]
+Get:2 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble/main amd64 mysql-common all 5.8+1.1.0build1 [6746 B]
+Get:3 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-8.0 amd64 8.0.37-0ubuntu0.24.04.1 [22.4 kB]
+Get:4 http://us-west-2.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client all 8.0.37-0ubuntu0.24.04.1 [9414 B]
+Fetched 2832 kB in 0s (37.8 MB/s)
+Selecting previously unselected package mysql-client-core-8.0.
+(Reading database ... 102433 files and directories currently installed.)
+Preparing to unpack .../mysql-client-core-8.0_8.0.37-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking mysql-client-core-8.0 (8.0.37-0ubuntu0.24.04.1) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../mysql-common_5.8+1.1.0build1_all.deb ...
+Unpacking mysql-common (5.8+1.1.0build1) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../mysql-client-8.0_8.0.37-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking mysql-client-8.0 (8.0.37-0ubuntu0.24.04.1) ...
+Selecting previously unselected package mysql-client.
+Preparing to unpack .../mysql-client_8.0.37-0ubuntu0.24.04.1_all.deb ...
+Unpacking mysql-client (8.0.37-0ubuntu0.24.04.1) ...
+Setting up mysql-common (5.8+1.1.0build1) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up mysql-client-core-8.0 (8.0.37-0ubuntu0.24.04.1) ...
+Setting up mysql-client-8.0 (8.0.37-0ubuntu0.24.04.1) ...
+Setting up mysql-client (8.0.37-0ubuntu0.24.04.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...
+Scanning candidates...
+Scanning linux images...
+
+Pending kernel upgrade!
+Running kernel version:
+  6.8.0-1008-aws
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-1010-aws.
+
+Restarting the system to load the new kernel will not be handled automatically, so you should
+consider rebooting.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-17-199:~$ sudo mysql -u remote_user -h 172.31.17.199 -p
+Enter password:
+ERROR 2003 (HY000): Can't connect to MySQL server on '172.31.17.199:3306' (111)
+ubuntu@ip-172-31-17-199:~$ sudo mysql -u remote_user -h 172.31.17.109 -p
+Enter password:
+ERROR 2003 (HY000): Can't connect to MySQL server on '172.31.17.109:3306' (113)
+ubuntu@ip-172-31-17-199:~$ sudo mysql -u remote_user -h 172.31.30.109 -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.37-0ubuntu0.24.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> Show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| performance_schema |
+| sample_db          |
++--------------------+
+3 rows in set (0.01 sec)
+
+mysql> exit
+Bye
+ubuntu@ip-172-31-17-199:~$ ^C
+ubuntu@ip-172-31-17-199:~$
